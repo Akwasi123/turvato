@@ -1,9 +1,16 @@
 
 import './App.css';
+// import styled, {css} from 'styled-components';
+import Navbar from './components/Navbar';
+
+
+
 
 function App() {
  return(
-   <h1>Hello world!</h1>
+   <div className='app-container'>
+     <Navbar/>
+   </div>
  );
 }
 
