@@ -9,6 +9,7 @@
 html{
   scroll-behavior: smooth;
   height: 100%;
+  width: 100%;
 
 }
 
@@ -20,3 +21,7 @@ body{
   position: relative;
 }
 
+
+.top-section{
+  padding-top: 5em;
+}

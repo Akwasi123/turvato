@@ -11,7 +11,7 @@ import WebTemp from './pages/webtemp';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Router>
         <Navbar />
         <Routes>
