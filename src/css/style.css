@@ -12,9 +12,8 @@ html {
 }
 
 .content {
-  overflow-x: hidden;
   margin: 0 2em;
-  height: 100vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
