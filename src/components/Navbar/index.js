@@ -10,26 +10,28 @@ function Navbar() {
         <div>
             <Nav>
                 <NavLeft>
-                    <Logo logo_white>Turvato</Logo>
+                    <NavLink to='/'>
+                        <Logo logo_white>Turvato</Logo>
+                    </NavLink>
                     <Burger>
                         <Hamburger toggled={open} toggle={setOpen}/>
                     </Burger>
                     <NavMenu open={open}>
-                        <NavLink open={open} to='/' >
-                            Home
-                        </NavLink>
-                        <NavLink open={open} to='/blog' >
-                            Blog
-                        </NavLink>
-                        <NavLink open={open} to='/prem' >
-                            Premium Themes
-                        </NavLink>
-                        <NavLink open={open} to='/free' >
-                            Free Themes
-                        </NavLink>
-                        <NavLink open={open} to='/webtemp' >
-                            Website Templates
-                        </NavLink>
+                        <div className="navMen-container">
+                            <NavLink open={open} to='/blog' >
+                                Blog
+                            </NavLink>
+                            <NavLink open={open} to='/prem' >
+                                Premium Themes
+                            </NavLink>
+                            <NavLink open={open} to='/free' >
+                                Free Themes
+                            </NavLink>
+                            <NavLink open={open} to='/webtemp' >
+                                Website Templates
+                            </NavLink>
+                        </div>
+                        
                     </NavMenu>
                 </NavLeft>
                 <NavBtn>

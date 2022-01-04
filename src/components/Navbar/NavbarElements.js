@@ -7,9 +7,10 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // position: absolute;
+    position: fixed;
     // top: 0;
     // left: 0;
+    background: #992911;
     height: 5em;
     width: 100%;
     padding: 0 2em;
@@ -51,13 +52,15 @@ export const NavMenu = styled.div`
     position: ${props => props.open ? "absolute":"none"};
     top: 5em;
     left: 0;
+    // border: 1px solid white;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
     width: 100%;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     padding: 0 2em;
-    background: #FF451C;
+    background: #992911;
+    z-index: 999;
     
     
     @media screen and (min-width: 50em){
@@ -76,12 +79,13 @@ export const NavMenu = styled.div`
 export const NavLink = styled(Link)`
     color: #fff;
     text-decoration: none;
-    margin: ${props => props.open ? "50px 0;" : "0"};
+    // margin: ${props => props.open ? "50px 0;" : "0"};
     transition: all 0.3s ease;
     font-size: 1rem;
     
     @media screen and (min-width: 50em){
         font-size: 0.8rem;
+        text-align: center;
 
         &.active{
             // color: #FF451C;
@@ -107,18 +111,19 @@ export const NavBtn = styled.button`
     @media screen and (min-width: 50em){
         display: block;
         padding: 15px 20px;
-        margin: 0 18em;
+        // margin: 0 18em;
         color: white;
         cursor: pointer;
         border-radius: 50px;
-        border: 1px solid black;
+        border: 1px solid transparent;
         background: black;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         transition: all 0.3s ease;
 
         &:hover{
             scale: 1.1;
-            background: orange;
+            // background: orange;
+            color: black;
         }
     }
 `
