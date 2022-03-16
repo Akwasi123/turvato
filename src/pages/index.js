@@ -23,7 +23,6 @@ import gridImg6 from '../assets/images/wallpaperflare.com_wallpaper(4).jpg'
 import gridImg7 from '../assets/images/wallpaperflare.com_wallpaper(5).jpg'
 import gridImg8 from '../assets/images/wallpaperflare.com_wallpaper(6).jpg'
 import gridImg9 from '../assets/images/wallpaperflare.com_wallpaper(7).jpg'
-import gridImg10 from '../assets/images/wallpaperflare.com_wallpaper(8).jpg'
 
 function Home () {
   return (
@@ -166,7 +165,9 @@ function Home () {
             <div className=''>Bootstrap Templates</div>
           </div>
           <div className='copyrightInfo'>
-            <p>Copyright &copy; 2021 turvato | All rights reserved | Dev Krobs</p>  
+            <p>
+              Copyright &copy; 2021 turvato | All rights reserved | Dev Krobs
+            </p>
           </div>
         </footer>
       </Footer>
