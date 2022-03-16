@@ -10,7 +10,7 @@ export const PageSection = styled.section`
     @media screen and (min-width: 50em){
         padding: 0em 10em;
         margin: auto;
-        height: 100vh;
+        // height: 100vh;
         // border: 1px solid white;
     
     }
@@ -54,4 +54,14 @@ export const Button = styled.button`
     &:hover{
         scale: 1.1;
     }
+`
+
+
+export const Footer = styled.footer`
+    margin-top: 5em;
+    padding: 20px 0;
+    width: 100%;
+    height: 7em;
+    background: #AE1E1A;
+
 `

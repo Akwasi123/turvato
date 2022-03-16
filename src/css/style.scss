@@ -150,9 +150,99 @@ body{
 
 .themeSc{
     .top_info{
-        
+        h2, p{
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p{
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+    
+
+
+    .themeGrid{
+        margin: 20px 0;
+        // border: 1px solid white;
+
+        .themeMenu{
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .menuItem{
+                position: relative;
+                &.active{
+                    // color: #AE1E1A;
+                    &::after{
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        // margin: 0;
+                        content: "";
+                        margin: 5px auto;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #ff451c;
+                        // color: red;
+                    }
+                }
+            }
+        }
+
+    }
+    .themeGridItems{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        row-gap: 50px;
+
+        // border: 1px solid white;
+        .gridItem{
+            width: 20em;
+            height: 18em;
+            border-radius: 20px;
+            // border: 1px solid #AE1E1A;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .loadMbtn{
+        text-align: center;
+        width: 100%;
+        margin: 30px auto;
     }
 }
+
+footer{
+    font-size: 0.8rem;
+
+    .ft_links{
+        text-align: center;
+        width: 60%;
+        margin: 5px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copyrightInfo{
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
 
 
 
