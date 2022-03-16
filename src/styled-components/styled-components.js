@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const PageSection = styled.section`
     width: 100%;
-    // padding: 5em 2em;
-    height: 100vh;
+    padding: 5em 2em;
+    height: auto;
     margin: auto;
     // border: 1px solid red;
 
     @media screen and (min-width: 50em){
-        padding: 0em 8em;
+        padding: 0em 10em;
         margin: auto;
         height: 100vh;
         // border: 1px solid white;

@@ -16,7 +16,7 @@ export const Nav = styled.nav`
     padding: 0 2em;
     z-index: 999;
 
-    @media screen and (min-width: 50em){
+    @media screen and (min-width: 768px){
         // border: 1px solid black;  
         // width: 80%;
         padding: 0 10em;
@@ -32,8 +32,9 @@ export const NavLeft = styled.div`
     justify-content: space-between;
     width: 100%;
     
-    @media screen and (min-width: 50em){
+    @media screen and (min-width: 768px){
         // border: 1px solid black;
+        justify-content: flex-start;
         width: 50em;
     }
 
@@ -63,10 +64,11 @@ export const NavMenu = styled.div`
     z-index: 999;
     
     
-    @media screen and (min-width: 50em){
+    @media screen and (min-width: 768px){
         display: flex;
         flex-direction: row;
-        width: 50em;
+        justify-content: flex-start;
+        width: 30em;
         height: auto;
         position: relative;
         top: auto;
@@ -108,9 +110,10 @@ export const NavBtnLink = styled(Link)`
 export const NavBtn = styled.button`
     display: none;
 
-    @media screen and (min-width: 50em){
+    @media screen and (min-width: 768px){
         display: block;
-        padding: 15px 20px;
+        padding: 15px;
+        width: 100px;
         // margin: 0 18em;
         color: white;
         cursor: pointer;
@@ -134,7 +137,7 @@ export const Burger = styled.div`
     color: white;
     cursor: pointer;
 
-    @media screen and (min-width: 50em){
+    @media screen and (min-width: 768px){
         display: none;
     }
 `

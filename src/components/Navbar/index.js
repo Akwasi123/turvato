@@ -14,7 +14,7 @@ function Navbar() {
                         <Logo logo_white>Turvato</Logo>
                     </NavLink>
                     <Burger>
-                        <Hamburger toggled={open} toggle={setOpen}/>
+                        <Hamburger size={20} toggled={open} toggle={setOpen}/>
                     </Burger>
                     <NavMenu open={open}>
                         <div className="navMen-container">
